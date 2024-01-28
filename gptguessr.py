@@ -101,6 +101,8 @@ class GeoguessrAssistant():
 
         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
         
+        print(response.json())
+        
         result = response.json()['choices'][0]['message']['content'].split('\n')
         print("\n\n")
         return result[0]
@@ -111,7 +113,7 @@ def main():
     
     app.collect_screenshots()
     
-    message = "Processing Images"
+    message = "Making Guess..."
     
     stop_thread = False
 

@@ -6,8 +6,8 @@ This repository contains a single script which passes screenshots of the game [G
 
 # How to use
 
-1. Clone the repo
-2. Install dependencies
+1. Clone the repo `git clone https://github.com/kevang33/gpt-guessr.git`
+2. Install dependencies `pip install -r requirements.txt`
 3. With a game of GeoGuessr open, Run `python gptguessr.py`. It is recommended to use a second monitor for the GeoGuessr window.
 4. After a short delay, the first screenshot will be taken. Another short delay will follow before the second screenshot: it is recommended to turn around during this time to provide the model with more information on where you are
 5. Use the prediction to make your guess!
